@@ -7,13 +7,21 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './layout/header.component';
 import { LayoutComponent } from './layout/layout.component';
 import { BodyComponent } from './layout/body.component';
+import { RecipesComponent } from './recipes/recipes.component';
+import { RecipeListComponent } from './recipes/recipe-list/recipe-list.component';
+import { RecipeItemComponent } from './recipes/recipe-list/recipe-item.component';
+import { RecipeDetailComponent } from './recipes/recipe-list/recipe-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LayoutComponent,
     HeaderComponent,
-    BodyComponent
+    BodyComponent,
+    RecipesComponent,
+    RecipeListComponent,
+    RecipeItemComponent,
+    RecipeDetailComponent
   ],
   imports:      [
     BrowserModule,
