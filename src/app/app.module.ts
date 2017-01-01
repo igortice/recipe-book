@@ -4,12 +4,16 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header.component';
+import { HeaderComponent } from './layout/header.component';
+import { LayoutComponent } from './layout/layout.component';
+import { BodyComponent } from './layout/body.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    LayoutComponent,
+    HeaderComponent,
+    BodyComponent
   ],
   imports:      [
     BrowserModule,
