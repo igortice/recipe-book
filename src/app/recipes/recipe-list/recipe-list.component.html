@@ -2,7 +2,12 @@
   <a href="#" class="list-group-item list-group-item-action" *ngIf="!recipes" >
     <h5 class="list-group-item-heading">Without registered recipes</h5>
   </a>
-  <div *ngFor="let recipe of recipes">
-    <rb-recipe-item [recipe]="recipe"></rb-recipe-item>
+  <div *ngIf="recipes">
+    <a href="#" class="list-group-item list-group-item-action">
+      <h5 class="list-group-item-heading"><button type="button" class="btn btn-primary btn-block">Novo</button></h5>
+    </a>
+    <div *ngFor="let recipe of recipes">
+      <rb-recipe-item [recipe]="recipe" (click)="onSelected(recipe)" ></rb-recipe-item>
+    </div>
   </div>
 </div>

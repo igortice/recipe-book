@@ -2,12 +2,12 @@
   <div class="media">
     <div class="media-left">
       <a href="#">
-        <img class="media-object" alt="64x64" style="width: 64px; height: 64px;" src="{{recipe.imagePath}}" data-holder-rendered="true">
+        <img class="media-object img-fluid" alt="64x64" style="width: 64px; height: 64px;" [src]="recipe?.imagePath" data-holder-rendered="true">
       </a>
     </div>
     <div class="media-body">
-      <h5 class="list-group-item-heading">{{recipe.name}}</h5>
-      <p class="list-group-item-text">{{recipe.description}}</p>
+      <h5 class="list-group-item-heading">{{recipe?.name}}</h5>
+      <p class="list-group-item-text">{{recipe?.description}}</p>
     </div>
   </div>
 </a>

@@ -1,15 +1,8 @@
-<div class="jumbotron">
-  <h1>Page Recipes</h1>
-  <p>
-    <a class="btn btn-lg btn-primary" href="../../components/navbar/" role="button">New Recipe »</a>
-  </p>
-</div>
-
 <div class="row">
   <div class="col-sm-6">
-    <rb-recipe-list></rb-recipe-list>
+    <rb-recipe-list (recipeSelected)="setSelecteRecipe($event)" ></rb-recipe-list>
   </div>
   <div class="col-sm-6">
-    <rb-recipe-detail></rb-recipe-detail>
+    <rb-recipe-detail *ngIf="selectedRecipe" [selectedRecipe]="selectedRecipe" ></rb-recipe-detail>
   </div>
 </div>
